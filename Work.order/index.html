@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style> 
+  .spacing {
+    margin-top: 50px
+  }
+  </style>
+  <title>Kim's Inventory</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Isaiah Williams">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="description" content="This page is about showing what I have learned in Hyper Text Language HTML">
+  <link rel="icon" href="images/inventoryboxes.png" type="image/x-icon">
+  <link rel="stylesheet" href="images/inventoryboxes.png"> 
+</head>
+<body>
+    <header>
+      <div class="container">
+        <img src="images/inventoryboxes.png" alt="image of boxes">
+        <!--Image is used inside the container-->
+        <p> Inventory Management </p>
+      </div>  
+    </header> 
+    <div id="space-1">
+        <!--Space bewtween nav and list: already completed-->
+    </div>
+    
+    <section>
+        <!-- Here in the main.css I have it under
+        ().intentorykims). This is sectioned off for semantics-->
+      <h1 class="inventorykims">INVENTORY</h1>
+    </section>
+    <div id="container_leftwall">
+
+    </div>
+      <!--Inventory starts from here-->
+    <main>
+        <table><!--This is the main container for table-->
+        <thead><!--Table Heading-->
+          <tr><!--Table Row-->
+            <th>Item Name</th><!--Table header cell, should always be placed in the <tr>. Just use for colum heading-->
+            <th>Box Amount</th><!--column heading-->
+            <th>Quantity</th><!--column heading-->
+            <th>Damaged</th><!--column heading-->
+            <th>Order Status</th><!--column heading-->
+          </tr><!--completed table-->
+        </thead>
+        <tbody><!--Represent table body section, --><tr>
+          <td class="items">Uline Nitrile Gloves - 2 XL&nbsp;</td>
+          <td class="boxamount"><input type="number" id="UNG2xl-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="UNG2xl-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="UNG2xl-damaged" min="0"></td>
+          <td id="UNG2xl-Status" class="status good">Good</td>
+      </tr>
+          <tr>
+            <td class="items">Uline Nitrile Gloves - XL&nbsp;</td>
+            <td class="boxamount"><input type="number" id="UNGxl-BoxAmount" min="0"></td>
+            <td class="quantity"><input type="number" id="UNGxl-Quantity" min="0"></td>
+            <td class="damaged"><input type="number" id="UNGxl-damaged" min="0"></td>
+            <td id="UNGxl-Status" class="status good">Good</td>
+        </tr>
+      
+        <tr>
+          <td class="items">Uline Nitrile Gloves - L&nbsp;</td>
+          <td class="boxamount"><input type="number" id="UNGl-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="UNGl-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="UNGl-damaged" min="0"></td>
+          <td id="UNGl-Status" class="status good">Good</td>
+      </tr>    
+      
+        <tr>
+          <td class="items">Uline Nitrile Gloves - M&nbsp;</td>
+          <td class="boxamount"><input type="number" id="UNGm-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="UNGm-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="UNGm-damaged" min="0"></td>
+          <td id="UNGm-Status" class="status good">Good</td>
+      </tr>    
+      
+        <tr>
+          <td class="items">Uline Nitrile Gloves HD- XL&nbsp;</td>
+          <td class="boxamount"><input type="number" id="UNGHDxl-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="UNGHDxl-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="UNGHDxl-damaged" min="0"></td>
+          <td id="UNGHDxl-Status" class="status good">Good</td>
+      </tr>    
+      
+        <tr>
+          <td class="items"> Uline Nitrile Gloves HD- L&nbsp;</td>
+          <td class="boxamount"><input type="number" id="UNGHDl-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="UNGHDl-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="UNGHDl-damaged" min="0"></td>
+          <td id="UNGHDl-Status" class="status good">Good</td>
+      </tr>    
+      
+        <tr>
+          <td class="items"> Uline Nitrile Gloves HD- M&nbsp;</td>
+          <td class="boxamount"><input type="number" id="UNGHDm-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="UNGHDm-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="UNGHDm-damaged" min="0"></td>
+          <td id="UNGHDm-Status" class="status good">Good</td>
+      </tr>    
+      
+        <tr>
+          <td class="items"> Face Mask&nbsp;</td>
+          <td class="boxamount"><input type="number" id="Facem-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Facem-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Facem-damaged" min="0"></td>
+          <td id="Facem-Status" class="status good">Good</td>
+      </tr>    
+      
+        <tr>
+          <td class="items"> Beard Nets &nbsp;</td>
+          <td class="boxamount"><input type="number" id="Beardn-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Beardn-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Beardn-damaged" min="0"></td>
+          <td id="Beardn-Status" class="status good">Good</td>
+      </tr>    
+      
+      <tr>
+          <td class="items">  Hair Boufant- 24"  &nbsp;</td>
+          <td class="boxamount"><input type="number" id="HairB24-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="HairB24-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="HairB24-damaged" min="0"></td>
+          <td id="HairB24-Status" class="status good">Good</td>
+      </tr>    
+      <!-- issues with code working here-->
+        <tr>
+          <td class="items">  Shoe Covers 6-11 &nbsp;</td>
+          <td class="boxamount"><input type="number" id="Shoec611-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Shoec611-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Shoec611-damaged" min="0"></td>
+          <td id="Shoec611-Status" class="status good">Good</td>
+      </tr>    
+      
+        <tr>
+          <td class="items">  Shoe Covers 12-15 &nbsp;</td>
+          <td class="boxamount"><input type="number" id="Shoec1215-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Shoec1215-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Shoec1215-damaged" min="0"></td>
+          <td id="Shoec1215-Status" class="status good">Good</td>
+      </tr>    
+      
+      
+        <tr>
+          <td class="items">  Coveralls - 2XL &nbsp;</td>
+          <td class="boxamount"><input type="number" id="Coveralls2xl-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Coveralls2xl-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Coveralls2xl-damaged" min="0"></td>
+          <td id="Coveralls2xl-Status" class="status good">Good</td>
+      </tr>    
+      
+        <tr>
+          <td class="items">  Coveralls - XL &nbsp;</td>
+          <td class="boxamount"><input type="number" id="Coverallsxl-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Coverallsxl-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Coverallsxl-damaged" min="0"></td>
+          <td id="Coverallsxl-Status" class="status good">Good</td>
+      </tr>    
+      
+        <tr>
+          <td class="items">  Coveralls - L &nbsp;</td>
+          <td class="boxamount"><input type="number" id="Coverallsl-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Coverallsl-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Coverallsl-damaged" min="0"></td>
+          <td id="Coverallsl-Status" class="status good">Good</td>
+      </tr>    
+      
+        <tr>
+          <td class="items">  Coveralls - M &nbsp;</td>
+          <td class="boxamount"><input type="number" id="Coverallsm-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Coverallsm-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Coverallsm-damaged" min="0"></td>
+          <td id="Coverallsm-Status" class="status good">Good</td>
+      </tr> 
+        <tr>
+          <td class="items">  Lab Coats- 3XL&nbsp;</td>
+          <td class="boxamount"><input type="number" id="Labc3xl-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Labc3xl-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Labc3xl-damaged" min="0"></td>
+          <td id="Labc3xl-Status" class="status good">Good</td>
+      </tr> 
+       
+        <tr>
+          <td class="items">  Lab Coats- 2XL&nbsp;</td>
+          <td class="boxamount"><input type="number" id="Labc2xl-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Labc2xl-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Labc2xl-damaged" min="0"></td>
+          <td id="Labc2xl-Status" class="status good">Good</td>
+      </tr> 
+       
+        <tr>
+          <td class="items">  Lab Coats- XL&nbsp;</td>
+          <td class="boxamount"><input type="number" id="Labcxl-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Labcxl-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Labcxl-damaged" min="0"></td>
+          <td id="Labcxl-Status" class="status good">Good</td>
+      </tr> 
+       
+        <tr>
+          <td class="items">  Lab Coats- L&nbsp;</td>
+          <td class="boxamount"><input type="number" id="Labcl-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Labcl-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Labcl-damaged" min="0"></td>
+          <td id="Labcl-Status" class="status good">Good</td>
+      </tr> 
+       
+        <tr>
+          <td class="items">  Lab Coats- M&nbsp;</td>
+          <td class="boxamount"><input type="number" id="Labcm-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Labcm-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Labcm-damaged" min="0"></td>
+          <td id="Labcm-Status" class="status good">Good</td>
+      </tr> 
+  
+        <tr>
+          <td class="items">  Work Gloves- Latex Coated&nbsp;</td>
+          <td class="boxamount"><input type="number" id="Workglc-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Workglc-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Workglc-damaged" min="0"></td>
+          <td id="Workglc-Status" class="status good">Good</td>
+      </tr> 
+  
+        <tr>
+          <td class="items">  Work Gloves- Leather&nbsp;</td>
+          <td class="boxamount"><input type="number" id="Workgl-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Workgl-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Workgl-damaged" min="0"></td>
+          <td id="Workgl-Status" class="status good">Good</td>
+      </tr> 
+  
+        <tr>
+          <td class="items"> Eye Protection- Clear &nbsp;</td>
+          <td class="boxamount"><input type="number" id="Eyep-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Eyep-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Eyep-damaged" min="0"></td>
+          <td id="Eyep-Status" class="status good">Good</td>
+      </tr> 
+  
+        <tr>
+          <td class="items"> Eye Protection- Tinted &nbsp;</td>
+          <td class="boxamount"><input type="number" id="Eyept-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Eyept-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Eyept-damaged" min="0"></td>
+          <td id="Eyept-Status" class="status good">Good</td>
+      </tr> 
+          <tr>
+        <tr>
+          <td class="items"> Knee Pads &nbsp;</td>
+          <td class="boxamount"><input type="number" id="Kneep-BoxAmount" min="0"></td>
+          <td class="quantity"><input type="number" id="Kneep-Quantity" min="0"></td>
+          <td class="damaged"><input type="number" id="Kneep-damaged" min="0"></td>
+          <td id="Kneep-Status" class="status good">Good</td>
+      </tr> 
+        </table>
+        
+          <!--Bathroom supplies-->
+          <h2> Bathroom Supplies </h2>
+        <table><!--This is the main container for table-->
+          <thead><!--Table Heading-->
+            <tr><!--Table Row-->
+              <th   style="width: 7em;">Item Name</th><!--Table header cell, should always be placed in the <tr>. Just use for colum heading-->
+              <th>Box Amount</th><!--column heading-->
+              <th>Quantity</th><!--column heading-->
+              <th>Damaged</th><!--column heading-->
+              <th>Order Status</th><!--column heading-->
+            </tr><!--completed table-->
+          </thead>
+               
+          <tbody><!--Represent table body section, -->
+            
+              <tr>
+                <td class="items"> Toilet Tissue&nbsp;</td>
+                <td class="boxamount"><input type="number" id="Toilett-BoxAmount" min="0"></td>
+                <td class="quantity"><input type="number" id="Toilett-Quantity" min="0"></td>
+                <td class="damaged"><input type="number" id="Toilett-damaged" min="0"></td>
+                <td id="Toilett-Status" class="status good">Good</td>
+            </tr>  
+            
+              <tr>
+                <td class="items"> Facial Tissues &nbsp;</td>
+                <td class="boxamount"><input type="number" id="Facialt-BoxAmount" min="0"></td>
+                <td class="quantity"><input type="number" id="Facialt-Quantity" min="0"></td>
+                <td class="damaged"><input type="number" id="Facialt-damaged" min="0"></td>
+                <td id="Facialt-Status" class="status good">Good</td>
+            </tr>  
+            
+              <tr>
+                <td class="items"> Multi-fold Paper Towels&nbsp;</td>
+                <td class="boxamount"><input type="number" id="Toilett-BoxAmount" min="0"></td>
+                <td class="quantity"><input type="number" id="Toilett-Quantity" min="0"></td>
+                <td class="damaged"><input type="number" id="Toilett-damaged" min="0"></td>
+                <td id="Multfpt-Status" class="status good">Good</td>
+            </tr>  
+            
+              <tr>
+                <td class="items"> Hand Soap&nbsp;</td>
+                <td class="boxamount"><input type="number" id="Hands-BoxAmount" min="0"></td>
+                <td class="quantity"><input type="number" id="Hands-Quantity" min="0"></td>
+                <td class="damaged"><input type="number" id="Hands-damaged" min="0"></td>
+                <td id="Hands-Status" class="status good">Good</td>
+            </tr>  
+            
+              <tr>
+                <td class="items"> Hand Sanitizer &nbsp;</td>
+                <td class="boxamount"><input type="number" id="Handsan-BoxAmount" min="0"></td>
+                <td class="quantity"><input type="number" id="Handsan-Quantity" min="0"></td>
+                <td class="damaged"><input type="number" id="Handsan-damaged" min="0"></td>
+                <td id="Handsan-Status" class="status good">Good</td>
+            </tr>  
+         
+              <tr>
+                <td class="items"> Auto-Dispenser Soap Refill &nbsp;</td>
+                <td class="boxamount"><input type="number" id="Autodispenser-BoxAmount" min="0"></td>
+                <td class="quantity"><input type="number" id="Autodispenser-Quantity" min="0"></td>
+                <td class="damaged"><input type="number" id="Autodispenser-damaged" min="0"></td>
+                <td id="Autodispenser-Status" class="status good">Good</td>
+            </tr>  
+          </table>
+          <!--Seperation for Cleaning Supplies-->
+                    
+            <h3> Cleaning Supplies</h3>
+            
+        <table><!--This is the main container for table-->
+          <thead><!--Table Heading-->
+            <tr><!--Table Row-->
+              <th style="width: 7em;">Item Name</th><!--Table header cell, should always be placed in the <tr>. Just use for colum heading-->
+              <th>Box Amount</th><!--column heading-->
+              <th>Quantity</th><!--column heading-->
+              <th>Damaged</th><!--column heading-->
+              <th>Order Status</th><!--column heading-->
+            </tr><!--completed table-->
+          </thead>
+          <tbody><!--Represent table body section, -->
+  
+            <tr>
+              <td class="items"> Paper Towels &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Papert-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Papert-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Papert-damaged" min="0"></td>
+              <td id="Papert-Status" class="status good">Good</td>
+          </tr>
+  
+            <tr>
+              <td class="items"> Bleach &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Bleach-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Bleach-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Bleach-damaged" min="0"></td>
+              <td id="Bleach-Status" class="status good">Good</td>
+          </tr>
+  
+           <tr>
+              <td class="items"> Pine Sol &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Pines-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Pines-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Pines-damaged" min="0"></td>
+              <td id="Pines-Status" class="status good">Good</td>
+          </tr>
+           <tr>
+              <td class="items"> Simple Green &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Simpleg-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Simpleg-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Simpleg-damaged" min="0"></td>
+              <td id="Simpleg-Status" class="status good">Good</td>
+          </tr>
+           <tr>
+              <td class="items"> Disinfectant Wipes &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Disinfectantw-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Disinfectantw-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Disinfectantw-damaged" min="0"></td>
+              <td id="Disinfectantw-Status" class="status good">Good</td>
+          </tr>
+           <tr>
+              <td class="items"> Air Freshener &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Airfresh-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Airfresh-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Airfresh-damaged" min="0"></td>
+              <td id="Airfresh-Status" class="status good">Good</td>
+          </tr>
+           <tr>
+              <td class="items"> Lint Roller &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Lintr-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Lintr-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Lintr-damaged" min="0"></td>
+              <td id="Lintr-Status" class="status good">Good</td>
+          </tr>
+           <tr>
+              <td class="items"> Sponge &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Sponge-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Sponge-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Sponge-damaged" min="0"></td>
+              <td id="Sponge-Status" class="status good">Good</td>
+          </tr>
+           <tr>
+              <td class="items"> Scouring Pad &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Scouringp-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Scouringp-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Scouringp-damaged" min="0"></td>
+              <td id="Scouringp-Status" class="status good">Good</td>
+          </tr>
+           <tr>
+              <td class="items"> ProKure D &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Prod-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Prod-BoxAmount-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Prod-BoxAmount-damaged" min="0"></td>
+              <td id="Prod-BoxAmount-Status" class="status good">Good</td>
+          </tr>
+           <tr>
+              <td class="items"> ProKure V &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Prov-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Prov-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Prov-damaged" min="0"></td>
+              <td id="Prov-Status" class="status good">Good</td>
+          </tr>
+           <tr>
+              <td class="items"> ProKure G &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Prog-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Prog-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Prog-damaged" min="0"></td>
+              <td id="Prog-Status" class="status good">Good</td>
+          </tr>
+          </tbody>
+          </table>
+          <h3> Other </h3>
+          <table><!--This is the main container for table-->
+            <thead><!--Table Heading-->
+              <tr><!--Table Row-->
+                <th style="width: 8em;">Item Name</th><!--Table header cell, should always be placed in the <tr>. Just use for colum heading-->
+                <th>Box Amount</th><!--column heading-->
+                <th>Quantity</th><!--column heading-->
+                <th>Damaged</th><!--column heading-->
+                <th>Order Status</th><!--column heading-->
+              </tr><!--completed table-->
+            </thead>
+        
+            <tr>
+              <td class="items"> Ice Melt- 50 lb bag &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Icemelt-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Icemelt-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Icemelt-damaged" min="0"></td>
+              <td id="Icemelt-Status" class="status good">Good</td>
+          </tr>
+            <tr>
+              <td class="items"> Canned Air &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Cannedair-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Cannedair-Quantity" min="0"></td>
+              <td class="damaged"><input type="number" id="Cannedair-damaged" min="0"></td>
+              <td id="Cannedair-Status" class="status good">Good</td>
+          </tr>
+            <tr>
+              <td class="items"> Printer Paper &nbsp;</td> 
+              <td class="boxamount"><input type="number" id="Printerp-BoxAmount" min="0"></td>
+              <td class="quantity"><input type="number" id="Printerp-Quantity" min="0"></td>
+              <td class="damaged"><input type="Icemelt" id="Printerp-damaged" min="0"></td>
+              <td id="Printerp-Status" class="status good">Good</td>
+          </tr>
+          
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>    
+    </main>
+<!--This section is Java starting-->    
+<script>
+     var minimumQuantities = {
+            UNG2xl: 40, // minimum quantity for Uline Nitrile Gloves - 2 XL
+            UNGxl: 40,
+            UNGl: 40,
+            UNGm: 40,
+            UNGHD2xl: 40,  
+            UNGHDxl:40,
+            UNGHDl:40,
+            UNGHDm:40,
+            Facem: 12, 
+            Beardn: 20,
+            HairB24: 20,
+            Shoec611: 6,
+            Shoec1215: 6,
+            Coveralls2xl: 50,
+            Coverallsxl: 100,
+            Coverallsl: 100,
+            Coverallsm: 50,
+            Labc3xl: 50,
+            Labc2xl: 50,
+            Labcxl: 100,
+            Labcl: 100,
+            Labcm: 50,
+            Workglc: 10,
+            Workgl: 10,
+            Eyep: 10,
+            Eyept: 10,
+            Kneep: 10,
+            /*Bathrrom Supplies*/
+            Toilett: 80,
+            Facialt: 0,
+            Multifpt:0,
+            Hands:0,
+            Handsan:0,
+            Autodispenser:0,
+            /* Cleaning Supplies*/
+            Papert:54,
+            Blech:0,
+            Pines:0,
+            Simpleg:0,
+            Disinfectantw:0,
+            Airfresh:0,
+            Lintr:0,
+            Sponge:0,
+            Scouringp:0,
+            Prod:0,
+            Prov:0,
+            Prog:0,
+           /* Other Supplies*/ 
+           Icemelt:1,
+           Cannedair:1,
+           Printerpaper:2,
+
+        };
+        
+        var itemsPerBox = {
+            UNG2xl: 10, // items per box for Uline Nitrile Gloves - 2 XL
+            UNGxl: 10,
+            UNGl: 10,
+            UNGm: 10,
+            UNGHD2xl: 10, 
+            UNGHDxl: 10,
+            UNGHDl: 10,
+            UNGHDm: 10,
+            Facem: 6, 
+            Beardn: 10,
+            HairB24: 10,
+            Shoec611: 3,
+            Shoec1215: 3,
+            Coveralls2xl: 25,
+            Coverallsxl: 25,
+            Coverallsl: 25,
+            Coverallsm: 25,
+            Labc3xl: 25,
+            Labc2xl: 25,
+            Labcxl: 25,
+            Labcl: 25,
+            Labcm: 25,
+            Workglc: 10,
+            Workgl: 10,
+            Eyep: 10,
+            Eyept: 10,
+            Kneep: 10,           
+            /*Bathrrom Supplies*/
+            Toilett: 80,
+            Facialt: 0,
+            Multifpt:0,
+            Hands:0,
+            Handsan:0,
+            Autodispenser:0,
+            /* Cleaning Supplies*/
+            Papert:54,
+            Blech:0,
+            Pines:0,
+            Simpleg:0,
+            Disinfectantw:0,
+            Airfresh:0,
+            Lintr:0,
+            Sponge:0,
+            Scouringp:0,
+            Prod:0,
+            Prov:0,
+            Prog:0,
+           /* Other Supplies*/ 
+           Icemelt:1,
+           Cannedair:6,
+           Printerpaper:4,
+
+
+
+            
+            /*Cleaning Supplies*/
+        };
+        
+        // Function to check the current inventory level for each item and update the order status
+        function updateOrderStatus(itemName) {
+          // Get the number of items per box for this item
+          var itemsPerBoxForThisItem = itemsPerBox[itemName];
+        
+          var boxAmountElement = document.getElementById(itemName + '-BoxAmount');
+          var boxAmount = Number(boxAmountElement.value);
+          var totalQuantityInBoxes = itemsPerBoxForThisItem * boxAmount; // calculate total quantity in boxes
+        
+          var quantityElement = document.getElementById(itemName + '-Quantity');
+          var quantity = Number(quantityElement.value);
+        
+          var damagedElement = document.getElementById(itemName + '-damaged');
+          var damaged = Number(damagedElement.value);
+        
+          var totalQuantity = totalQuantityInBoxes + quantity - damaged; // calculate total quantity
+        
+          // Now use totalQuantity for the comparison
+          var shortage = minimumQuantities[itemName] - totalQuantity; // calculate shortage
+          if (shortage > 0) {
+            document.getElementById(itemName + '-Status').textContent = 'Order. Inventory short by ' + shortage + ' item(s)';
+            document.getElementById(itemName + '-Status').className = 'status order';
+          } else {
+            document.getElementById(itemName + '-Status').textContent = 'Good';
+            document.getElementById(itemName + '-Status').className = 'status good';
+          }
+        }
+
+        
+        // Run the updateOrderStatus function for each item whenever the quantity, box amount, or damaged amount changes
+        document.getElementById('UNG2xl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        document.getElementById('UNG2xl-Quantity').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        document.getElementById('UNG2xl-damaged').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        
+        document.getElementById('UNGxl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+        document.getElementById('UNGxl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+        document.getElementById('UNGxl-damaged').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+       
+        document.getElementById('UNGl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        document.getElementById('UNGl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        document.getElementById('UNGl-damaged').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        
+        document.getElementById('UNGm-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        document.getElementById('UNGm-Quantity').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        document.getElementById('UNGm-damaged').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        
+        document.getElementById('UNGHDxl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        document.getElementById('UNGHDxl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        document.getElementById('UNGHDxl-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        
+        document.getElementById('UNGHDl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        document.getElementById('UNGHDl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        document.getElementById('UNGHDl-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        
+        document.getElementById('UNGHDm-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        document.getElementById('UNGHDm-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        document.getElementById('UNGHDm-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        
+        document.getElementById('Facem-BoxAmount').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        document.getElementById('Facem-Quantity').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        document.getElementById('Facem-damaged').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        
+        document.getElementById('Beardn-BoxAmount').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        document.getElementById('Beardn-Quantity').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        document.getElementById('Beardn-damaged').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        
+        document.getElementById('HairB24-BoxAmount').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        document.getElementById('HairB24-Quantity').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        document.getElementById('HairB24-damaged').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        
+        document.getElementById('Shoec611-BoxAmount').addEventListener('change', function() { updateOrderStatus('Shoec611'); });
+        document.getElementById('Shoec611-Quantity').addEventListener('change', function() { updateOrderStatus('Shoec611'); });
+        document.getElementById('Shoec611-damaged').addEventListener('change', function() { updateOrderStatus('Shoec611'); });
+        
+        document.getElementById('Shoec1215-BoxAmount').addEventListener('change', function() { updateOrderStatus('Shoec1215'); });
+        document.getElementById('Shoec1215-Quantity').addEventListener('change', function() { updateOrderStatus('Shoec1215'); });
+        document.getElementById('Shoec1215-damaged').addEventListener('change', function() { updateOrderStatus('Shoec1215'); });
+        
+        document.getElementById('Coveralls2xl-BoxAmount').addEventListener('change', function() { updateOrderStatus('Coveralls2xl'); });
+        document.getElementById('Coveralls2xl-Quantity').addEventListener('change', function() { updateOrderStatus('Coveralls2xl'); });
+        document.getElementById('Coveralls2xl-damaged').addEventListener('change', function() { updateOrderStatus('Coveralls2xl'); });
+       
+        document.getElementById('Coverallsxl-BoxAmount').addEventListener('change', function() { updateOrderStatus('Coverallsxl'); });
+        document.getElementById('Coverallsxl-Quantity').addEventListener('change', function() { updateOrderStatus('Coverallsxl'); });
+        document.getElementById('Coverallsxl-damaged').addEventListener('change', function() { updateOrderStatus('Coverallsxl'); });
+        
+        document.getElementById('Coverallsl-BoxAmount').addEventListener('change', function() { updateOrderStatus('Coverallsl'); });
+        document.getElementById('Coverallsl-Quantity').addEventListener('change', function() { updateOrderStatus('Coverallsl'); });
+        document.getElementById('Coverallsl-damaged').addEventListener('change', function() { updateOrderStatus('Coverallsl'); });
+        
+        document.getElementById('Coverallsm-BoxAmount').addEventListener('change', function() { updateOrderStatus('Coverallsm'); });
+        document.getElementById('Coverallsm-Quantity').addEventListener('change', function() { updateOrderStatus('Coverallsm'); });
+        document.getElementById('Coverallsm-damaged').addEventListener('change', function() { updateOrderStatus('Coverallsm'); });
+        1 
+        document.getElementById('Labc3xl-BoxAmount').addEventListener('change', function() { updateOrderStatus('Labc3xl'); });
+        document.getElementById('Labc3xl-Quantity').addEventListener('change', function() { updateOrderStatus('Labc3xl'); });
+        document.getElementById('Labc3xl-damaged').addEventListener('change', function() { updateOrderStatus('Labc3xl'); });
+        
+        document.getElementById('Labc2xl-BoxAmount').addEventListener('change', function() { updateOrderStatus('Labc2xl'); });
+        document.getElementById('Labc2xl-Quantity').addEventListener('change', function() { updateOrderStatus('Labc2xl'); });
+        document.getElementById('Labc2xl-damaged').addEventListener('change', function() { updateOrderStatus('Labc2xl'); });
+        
+        document.getElementById('Labcxl-BoxAmount').addEventListener('change', function() { updateOrderStatus('Labcxl'); });
+        document.getElementById('Labcxl-Quantity').addEventListener('change', function() { updateOrderStatus('Labcxl'); });
+        document.getElementById('Labcxl-damaged').addEventListener('change', function() { updateOrderStatus('Labcxl'); });
+        
+        document.getElementById('Labcl-BoxAmount').addEventListener('change', function() { updateOrderStatus('Labcl'); });
+        document.getElementById('Labcl-Quantity').addEventListener('change', function() { updateOrderStatus('Labcl'); });
+        document.getElementById('Labcl-damaged').addEventListener('change', function() { updateOrderStatus('Labcl'); });
+        
+        document.getElementById('Labcm-BoxAmount').addEventListener('change', function() { updateOrderStatus('Labcm'); });
+        document.getElementById('Labcm-Quantity').addEventListener('change', function() { updateOrderStatus('Labcm'); });
+        document.getElementById('Labcm-damaged').addEventListener('change', function() { updateOrderStatus('Labcm'); });
+        
+        document.getElementById('Workglc-BoxAmount').addEventListener('change', function() { updateOrderStatus('Workglc'); });
+        document.getElementById('Workglc-Quantity').addEventListener('change', function() { updateOrderStatus('Workglc'); });
+        document.getElementById('Workglc-damaged').addEventListener('change', function() { updateOrderStatus('Workglc'); });
+        
+        document.getElementById('Workgl-BoxAmount').addEventListener('change', function() { updateOrderStatus('Workgl'); });
+        document.getElementById('Workgl-Quantity').addEventListener('change', function() { updateOrderStatus('Workgl'); });
+        document.getElementById('Workgl-damaged').addEventListener('change', function() { updateOrderStatus('Workgl'); });
+        
+        document.getElementById('Eyep-BoxAmount').addEventListener('change', function() { updateOrderStatus('Eyep'); });
+        document.getElementById('Eyep-Quantity').addEventListener('change', function() { updateOrderStatus('Eyep'); });
+        document.getElementById('Eyep-damaged').addEventListener('change', function() { updateOrderStatus('Eyep'); });
+       
+        document.getElementById('Eyept-BoxAmount').addEventListener('change', function() { updateOrderStatus('Eyept'); });
+        document.getElementById('Eyept-Quantity').addEventListener('change', function() { updateOrderStatus('Eyept'); });
+        document.getElementById('Eyept-damaged').addEventListener('change', function() { updateOrderStatus('Eyept'); });
+        
+        document.getElementById('Kneep-BoxAmount').addEventListener('change', function() { updateOrderStatus('Kneep'); });
+        document.getElementById('Kneep-Quantity').addEventListener('change', function() { updateOrderStatus('Kneep'); });
+        document.getElementById('Kneep-damaged').addEventListener('change', function() { updateOrderStatus('Kneep'); });
+        // Bathroom Supplies 
+        
+        document.getElementById('Toilett-BoxAmount').addEventListener('change', function() { updateOrderStatus('Toilett'); });
+        document.getElementById('Toilett-Quantity').addEventListener('change', function() { updateOrderStatus('Toilett'); });
+        document.getElementById('Toilett-damaged').addEventListener('change', function() { updateOrderStatus('Toilett'); });
+        
+        document.getElementById('Facialt-BoxAmount').addEventListener('change', function() { updateOrderStatus('Facialt'); });
+        document.getElementById('Facialt-Quantity').addEventListener('change', function() { updateOrderStatus('Facialt'); });
+        document.getElementById('Facialt-damaged').addEventListener('change', function() { updateOrderStatus('Facialt'); });
+        
+        document.getElementById('Multifpt-BoxAmount').addEventListener('change', function() { updateOrderStatus('Multifpt'); });
+        document.getElementById('Multifpt-Quantity').addEventListener('change', function() { updateOrderStatus('Multifpt'); });
+        document.getElementById('Multifpt-damaged').addEventListener('change', function() { updateOrderStatus('Multifpt'); });
+        
+        document.getElementById('Hands-BoxAmount').addEventListener('change', function() { updateOrderStatus('Hands'); });
+        document.getElementById('Hands-Quantity').addEventListener('change', function() { updateOrderStatus('Hands'); });
+        document.getElementById('Hands-damaged').addEventListener('change', function() { updateOrderStatus('Hands'); });
+        
+        document.getElementById('Handsan-BoxAmount').addEventListener('change', function() { updateOrderStatus('Handsan'); });
+        document.getElementById('Handsan-Quantity').addEventListener('change', function() { updateOrderStatus('Handsan'); });
+        document.getElementById('Handsan-damaged').addEventListener('change', function() { updateOrderStatus('Handsan'); });
+        
+        document.getElementById('Autodispenser-BoxAmount').addEventListener('change', function() { updateOrderStatus('Autodispenser'); });
+        document.getElementById('Autodispenser-Quantity').addEventListener('change', function() { updateOrderStatus('Autodispenser'); });
+        document.getElementById('Autodispenser-damaged').addEventListener('change', function() { updateOrderStatus('Autodispenser'); });
+       //Cleaning Supplies 
+        document.getElementById('Papert-BoxAmount').addEventListener('change', function() { updateOrderStatus('Papert'); });
+        document.getElementById('Papert-Quantity').addEventListener('change', function() { updateOrderStatus('Papert'); });
+        document.getElementById('Papert-damaged').addEventListener('change', function() { updateOrderStatus('Papert'); });
+        
+        document.getElementById('UNG2xl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        document.getElementById('UNG2xl-Quantity').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        document.getElementById('UNG2xl-damaged').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        
+        document.getElementById('UNGxl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+        document.getElementById('UNGxl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+        document.getElementById('UNGxl-damaged').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+       
+        document.getElementById('UNGl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        document.getElementById('UNGl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        document.getElementById('UNGl-damaged').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        
+        document.getElementById('UNGm-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        document.getElementById('UNGm-Quantity').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        document.getElementById('UNGm-damaged').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        
+        document.getElementById('UNGHDxl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        document.getElementById('UNGHDxl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        document.getElementById('UNGHDxl-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        
+        document.getElementById('UNGHDl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        document.getElementById('UNGHDl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        document.getElementById('UNGHDl-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        
+        document.getElementById('UNGHDm-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        document.getElementById('UNGHDm-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        document.getElementById('UNGHDm-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        
+        document.getElementById('Facem-BoxAmount').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        document.getElementById('Facem-Quantity').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        document.getElementById('Facem-damaged').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        
+        document.getElementById('Beardn-BoxAmount').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        document.getElementById('Beardn-Quantity').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        document.getElementById('Beardn-damaged').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        
+        document.getElementById('HairB24-BoxAmount').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        document.getElementById('HairB24-Quantity').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        document.getElementById('HairB24-damaged').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        
+        document.getElementById('Shoe611-BoxAmount').addEventListener('change', function() { updateOrderStatus('Shoe611'); });
+        document.getElementById('Shoe611-Quantity').addEventListener('change', function() { updateOrderStatus('Shoe611'); });
+        document.getElementById('Shoe611-damaged').addEventListener('change', function() { updateOrderStatus('Shoe611'); });
+        // Run the updateOrderStatus function for each item whenever the quantity, box amount, or damaged amount changes
+        document.getElementById('UNG2xl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        document.getElementById('UNG2xl-Quantity').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        document.getElementById('UNG2xl-damaged').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        
+        document.getElementById('UNGxl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+        document.getElementById('UNGxl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+        document.getElementById('UNGxl-damaged').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+       
+        document.getElementById('UNGl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        document.getElementById('UNGl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        document.getElementById('UNGl-damaged').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        
+        document.getElementById('UNGm-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        document.getElementById('UNGm-Quantity').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        document.getElementById('UNGm-damaged').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        
+        document.getElementById('UNGHDxl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        document.getElementById('UNGHDxl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        document.getElementById('UNGHDxl-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        
+        document.getElementById('UNGHDl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        document.getElementById('UNGHDl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        document.getElementById('UNGHDl-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        
+        document.getElementById('UNGHDm-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        document.getElementById('UNGHDm-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        document.getElementById('UNGHDm-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        
+        document.getElementById('Facem-BoxAmount').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        document.getElementById('Facem-Quantity').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        document.getElementById('Facem-damaged').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        
+        document.getElementById('Beardn-BoxAmount').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        document.getElementById('Beardn-Quantity').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        document.getElementById('Beardn-damaged').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        
+        document.getElementById('HairB24-BoxAmount').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        document.getElementById('HairB24-Quantity').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        document.getElementById('HairB24-damaged').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        
+        document.getElementById('Shoe611-BoxAmount').addEventListener('change', function() { updateOrderStatus('Shoe611'); });
+        document.getElementById('Shoe611-Quantity').addEventListener('change', function() { updateOrderStatus('Shoe611'); });
+        document.getElementById('Shoe611-damaged').addEventListener('change', function() { updateOrderStatus('Shoe611'); });
+        // Run the updateOrderStatus function for each item whenever the quantity, box amount, or damaged amount changes
+        document.getElementById('UNG2xl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        document.getElementById('UNG2xl-Quantity').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        document.getElementById('UNG2xl-damaged').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        
+        document.getElementById('UNGxl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+        document.getElementById('UNGxl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+        document.getElementById('UNGxl-damaged').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+       
+        document.getElementById('UNGl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        document.getElementById('UNGl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        document.getElementById('UNGl-damaged').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        
+        document.getElementById('UNGm-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        document.getElementById('UNGm-Quantity').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        document.getElementById('UNGm-damaged').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        
+        document.getElementById('UNGHDxl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        document.getElementById('UNGHDxl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        document.getElementById('UNGHDxl-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        
+        document.getElementById('UNGHDl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        document.getElementById('UNGHDl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        document.getElementById('UNGHDl-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        
+        document.getElementById('UNGHDm-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        document.getElementById('UNGHDm-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        document.getElementById('UNGHDm-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        
+        document.getElementById('Facem-BoxAmount').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        document.getElementById('Facem-Quantity').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        document.getElementById('Facem-damaged').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        
+        document.getElementById('Beardn-BoxAmount').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        document.getElementById('Beardn-Quantity').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        document.getElementById('Beardn-damaged').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        
+        document.getElementById('HairB24-BoxAmount').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        document.getElementById('HairB24-Quantity').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        document.getElementById('HairB24-damaged').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        
+        document.getElementById('Shoe611-BoxAmount').addEventListener('change', function() { updateOrderStatus('Shoe611'); });
+        document.getElementById('Shoe611-Quantity').addEventListener('change', function() { updateOrderStatus('Shoe611'); });
+        document.getElementById('Shoe611-damaged').addEventListener('change', function() { updateOrderStatus('Shoe611'); });
+        // Run the updateOrderStatus function for each item whenever the quantity, box amount, or damaged amount changes
+        document.getElementById('UNG2xl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        document.getElementById('UNG2xl-Quantity').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        document.getElementById('UNG2xl-damaged').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        
+        document.getElementById('UNGxl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+        document.getElementById('UNGxl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+        document.getElementById('UNGxl-damaged').addEventListener('change', function() { updateOrderStatus('UNGxl'); });
+       
+        document.getElementById('UNGl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        document.getElementById('UNGl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        document.getElementById('UNGl-damaged').addEventListener('change', function() { updateOrderStatus('UNGl'); });
+        
+        document.getElementById('UNGm-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        document.getElementById('UNGm-Quantity').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        document.getElementById('UNGm-damaged').addEventListener('change', function() { updateOrderStatus('UNGm'); });
+        
+        document.getElementById('UNGHDxl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        document.getElementById('UNGHDxl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        document.getElementById('UNGHDxl-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDxl'); });
+        
+        document.getElementById('UNGHDl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        document.getElementById('UNGHDl-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        document.getElementById('UNGHDl-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDl'); });
+        
+        document.getElementById('UNGHDm-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        document.getElementById('UNGHDm-Quantity').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        document.getElementById('UNGHDm-damaged').addEventListener('change', function() { updateOrderStatus('UNGHDm'); });
+        
+        document.getElementById('Facem-BoxAmount').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        document.getElementById('Facem-Quantity').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        document.getElementById('Facem-damaged').addEventListener('change', function() { updateOrderStatus('Facem'); });
+        
+        document.getElementById('Beardn-BoxAmount').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        document.getElementById('Beardn-Quantity').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        document.getElementById('Beardn-damaged').addEventListener('change', function() { updateOrderStatus('Beardn'); });
+        
+        document.getElementById('HairB24-BoxAmount').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        document.getElementById('HairB24-Quantity').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        document.getElementById('HairB24-damaged').addEventListener('change', function() { updateOrderStatus('HairB24'); });
+        
+        document.getElementById('Shoe611-BoxAmount').addEventListener('change', function() { updateOrderStatus('Shoe611'); });
+        document.getElementById('Shoe611-Quantity').addEventListener('change', function() { updateOrderStatus('Shoe611'); });
+        document.getElementById('Shoe611-damaged').addEventListener('change', function() { updateOrderStatus('Shoe611'); });
+</script>
+    <footer>
+        <p>&copy; 2023 Kim's Inventory</p>
+    </footer>
+</body>
+</html>
+

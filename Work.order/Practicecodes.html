@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style> 
+  .spacing {
+    margin-top: 50px
+  }
+  </style>
+  <title>Kim's Inventory</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Isaiah Williams">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="description" content="This page is about showing what I have learned in Hyper Text Language HTML">
+  <link rel="icon" href="images/inventoryboxes.png" type="image/x-icon">
+  <link rel="stylesheet" href="images/inventoryboxes.png"> 
+</head>
+<body>
+    <main>
+        <table><!--This is the main container for table-->
+        <thead><!--Table Heading-->
+          <tr><!--Table Row-->
+            <th>Item Name</th><!--Table header cell, should always be placed in the <tr>. Just use for colum heading-->
+            <th>Box Amount</th><!--column heading-->
+            <th>Quantity</th><!--column heading-->
+            <th>Damaged</th><!--column heading-->
+            <th>Order Status</th><!--column heading-->
+          </tr><!--completed table-->
+        </thead>
+        <tbody><!--Represent table body section, -->
+            <tr>
+                <td class="items">Uline Nitrile Gloves - 2 XL&nbsp;</td>
+                <td class="boxamount"><input type="number" id="UNG2xl-BoxAmount" min="0"></td>
+                <td class="quantity"><input type="number" id="UNG2xl-Quantity" min="0"></td>
+                <td class="damaged"><input type="number" id="UNG2xl-damaged" min="0"></td>
+                <td id="UNG2xl-Status" class="status good">Good</td> <!-- AT SOME POINT CHANGE THIS SO IT MOVES BETWEEN COLORS -->
+            </tr>
+            <tr>
+                <td class="items"> Toilet Tissue&nbsp;</td>
+                <td class="boxamount"><input type="number" id="Toilett-BoxAmount" min="0"></td>
+                <td class="quantity"><input type="number" id="Toilett-Quantity" min="0"></td>
+                <td class="damaged"><input type="number" id="Toilett-damaged" min="0"></td>
+                <td id="Toilett-Status" class="status good">Good</td> <!-- AT SOME POINT CHANGE THIS SO IT MOVES BETWEEN COLORS -->
+            </tr>  
+            <tr>
+                <td class="items"> Paper Towels &nbsp;</td> 
+                <td class="boxamount"><input type="number" id="Papert-BoxAmount" min="0"></td>
+                <td class="quantity"><input type="number" id="Papert-Quantity" min="0"></td>
+                <td class="damaged"><input type="number" id="Papert-damaged" min="0"></td>
+                <td id="Papert-Status" class="status good">Good</td> <!-- AT SOME POINT CHANGE THIS SO IT MOVES BETWEEN COLORS -->
+            </tr> 
+            <!--
+          <tr class="papertowels">
+            <td class="items"> Paper Towels &nbsp;</td>
+            <td><input type="number" id="Papert-BoxAmount" min="0"></td>
+            <td><input type="number" id="Papert-QuantityAmount" min="0"></td>
+            <td><input type="number" id="Papert-Damaged" min="0"></td>
+            <td class="status order">Order</td>
+          </tr>--> 
+</tbody>
+        </table>
+    </main>
+    <script>// Define minimum acceptable quantities and items per box for each item
+        var minimumQuantities = {
+            UNG2xl: 36, // minimum quantity for Uline Nitrile Gloves - 2 XL
+            Toilett: 244, // minimum quantity for Toilet Tissue
+            Papert: 54,
+        };
+        
+        var itemsPerBox = {
+            UNG2xl: 12, // items per box for Uline Nitrile Gloves - 2 XL
+            Toilett: 82, // items per box for Toilet Tissue
+            Papert: 18,
+        };
+        
+        // Function to check the current inventory level for each item and update the order status
+        function updateOrderStatus(itemName) {
+          // Get the number of items per box for this item
+          var itemsPerBoxForThisItem = itemsPerBox[itemName];
+        
+          var boxAmountElement = document.getElementById(itemName + '-BoxAmount');
+          var boxAmount = Number(boxAmountElement.value);
+          var totalQuantityInBoxes = itemsPerBoxForThisItem * boxAmount; // calculate total quantity in boxes
+        
+          var quantityElement = document.getElementById(itemName + '-Quantity');
+          var quantity = Number(quantityElement.value);
+        
+          var damagedElement = document.getElementById(itemName + '-damaged');
+          var damaged = Number(damagedElement.value);
+        
+          var totalQuantity = totalQuantityInBoxes + quantity - damaged; // calculate total quantity
+        
+          // Now use totalQuantity for the comparison
+          var shortage = minimumQuantities[itemName] - totalQuantity; // calculate shortage
+          if (shortage > 0) {
+            document.getElementById(itemName + '-Status').textContent = 'Order. Inventory short by ' + shortage + ' item(s)';
+            document.getElementById(itemName + '-Status').className = 'status order';
+          } else {
+            document.getElementById(itemName + '-Status').textContent = 'Good';
+            document.getElementById(itemName + '-Status').className = 'status good';
+          }
+        }
+        
+        // Run the updateOrderStatus function for each item whenever the quantity, box amount, or damaged amount changes
+        document.getElementById('UNG2xl-BoxAmount').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        document.getElementById('UNG2xl-Quantity').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        document.getElementById('UNG2xl-damaged').addEventListener('change', function() { updateOrderStatus('UNG2xl'); });
+        
+        document.getElementById('Toilett-BoxAmount').addEventListener('change', function() { updateOrderStatus('Toilett'); });
+        document.getElementById('Toilett-Quantity').addEventListener('change', function() { updateOrderStatus('Toilett'); });
+        document.getElementById('Toilett-damaged').addEventListener('change', function() { updateOrderStatus('Toilett'); });
+        
+        document.getElementById('Papert-BoxAmount').addEventListener('change', function() { updateOrderStatus('Papert'); });
+        document.getElementById('Papert-Quantity').addEventListener('change', function() { updateOrderStatus('Papert'); });
+        document.getElementById('Papert-damaged').addEventListener('change', function() { updateOrderStatus('Papert'); });
+
+        </script>
+        </body>

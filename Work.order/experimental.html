@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating a webpage for a to do list</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #todoInput {
+            margin-right: 10px;
+        }
+        #todoList li {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+  <div class="box green"></div>
+<div class="box purple"></div>
+<div class="box orange"></div>
+    <main>
+        <input id="todoInput" type="text" placeholder="New Task...">
+        <button onclick="addTask()">ADD</button>
+        <ul id="todoList"></ul>
+    </main>
+    <script>
+        function addTask() {
+            var li = document.createElement("li");
+            var inputValue = document.getElementById("todoInput").value;
+            var text = document.createTextNode(inputValue);
+            li.appendChild(text);
+
+            if (inputValue === '') {
+                alert("You must write something!");
+            } else {
+                document.getElementById("todoList").appendChild(li);
+            }
+            document.getElementById("todoInput").value = "";
+            var completeBtn = document.createElement("button");
+        completeBtn.innerHTML = "Finished";
+        completeBtn.onclick = function() {
+            this.parentElement.style.textDecoration = "line-through";
+            alert("That was not as bad as you made it seem");
+          };
+        li.appendChild(completeBtn);
+
+        var deleteBtn = document.createElement("button");
+        deleteBtn.innerHTML = "Delete";
+        deleteBtn.onclick = function() {
+            var li = this.parentElement;
+            li.parentElement.removeChild(li);
+        };
+        li.appendChild(deleteBtn);
+    }
+    </script>
+</body>
+</html>
